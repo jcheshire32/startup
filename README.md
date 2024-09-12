@@ -29,13 +29,19 @@ After selecting submit:
 * Results are persistently stored
 * Ability for admin to create and delete submissions
 ## Technologies
-HTML - Uses correct HTML structure for application. Hyperlinks to visit restaurant or store websites.
-CSS - Application styling that looks good on different screen sizes, uses good whitespace, color choice and contrast.
-JavaScript - Provides login, option displays, submission forms, display other users submissions, backend endpoint calls.
-React - Single page application with views componentized and reactive to user's actions.
-Service - Backend service with endpoints for:
+**HTML** - Uses correct HTML structure for application. Hyperlinks to visit restaurant or store websites.
+
+**CSS** - Application styling that looks good on different screen sizes, uses good whitespace, color choice and contrast.
+
+**JavaScript** - Provides login, option displays, submission forms, display other users submissions, backend endpoint calls.
+
+**React** - Single page application with views componentized and reactive to user's actions.
+
+**Service** - Backend service with endpoints for:
 * retrieving submissions
 * viewing submissions
 * Create/customize digital maps based on Google Maps data
-DB/Login - Store users and submissions in database. Register and login users. Credentials securely stored in database. Can't submit or browse unless authenticated.
-WebSocket - As users make submissions, their submissions are broadcast to all other users.
+
+**DB/Login** - Store users and submissions in database. Register and login users. Credentials securely stored in database. Can't submit or browse unless authenticated.
+
+**WebSocket** - As users make submissions, their submissions are broadcast to all other users.
