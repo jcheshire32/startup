@@ -8,7 +8,7 @@ The first page has 2 options: Log In or Sign Up.
 
 <img width="193" alt="GFF_mockup1" src="https://github.com/user-attachments/assets/bceb5d85-d750-49b8-8243-452f07390b12">
 
-The second page has 2 options: Submit a GFF or browse the GFF already on the website.
+The second page has 2 options: Submit a find or browse the finds already on the website.
 
 <img width="209" alt="GFF_mockup2" src="https://github.com/user-attachments/assets/3d1cf88f-9f66-4eef-aa7a-68850cece89a">
 
