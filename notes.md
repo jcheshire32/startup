@@ -26,7 +26,14 @@ shell commands:
 * ssh - Create a secure shell on a remote computer
 * scp - Securely copy files to a remote computer
 * history - Show the history of commands
-ping - Check if a website is up
-tracert - Trace the connections to a website
-dig - Show the DNS information for a domain
+
+Additional shell features:
+You can also chain the input and output of commands using special characters
+
+* | - Take the output from the command on the left and pipe, or pass, it to the command on the right
+* > - Redirect output to a file. Overwrites the file if it exists
+* >> - Redirect output to a file. Appends if the file exists
+* ping - Check if a website is up
+* tracert - Trace the connections to a website
+* dig - Show the DNS information for a domain
 man - Look up a command in the manual
