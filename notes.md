@@ -4,8 +4,8 @@ I can also link other .md files on here to organize my notes.
 I learned a lot about GitHub and I think it's way cool how easy it is to share code.
 
 shell commands:
-**echo** - Output the parameters of the command
-cd - Change directory
+* echo - Output the parameters of the command
+* cd - Change directory
 mkdir - Make directory
 rmdir - Remove directory
 rm - Remove file(s)
