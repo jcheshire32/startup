@@ -140,3 +140,27 @@ HTML input elements: (click edit to see better)
 * label -	Individual input label	- <label for="range">Range: </label>
 * output	- Output of input -	<output for="range">0</output>
 * meter	- Display value with a known range -	<meter min="0" max="100" value="50"></meter>
+
+Input Element Types and Meanings:
+* text -	Single line textual value
+* password -	Obscured password
+* email	- Email address
+* tel -	Telephone number
+* url	- URL address
+* number -	Numerical value
+* checkbox	- Inclusive selection
+* radio -	Exclusive selection
+* range	- Range limited number
+* date -	Year, month, day
+* datetime-local -	Date and time
+* month -	Year, month
+* week	- Week of year
+* color -	Color
+* file	- Local file
+* submit -	button to trigger form submission
+
+Most attributes have these:
+* name -	The name of the input. This is submitted as the name of the input if used in a form
+* disabled -	Disables the ability for the user to interact with the input
+* value -	The initial value of the input
+* required	- Signifies that a value is required in order to be valid
