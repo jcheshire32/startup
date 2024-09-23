@@ -83,6 +83,7 @@ SPECIAL CHARACTERS:
 * 😀 -	&#128512;
 
 STRUCTURE ELEMENTS:
+(click edit to see it better)
 <body>
   <p>Body</p>
   <header>
