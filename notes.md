@@ -129,7 +129,7 @@ STRUCTURE ELEMENTS:
   </footer>
 </body>
 
-HTML input elements:
+HTML input elements: (click edit to see better)
 * form -	Input container and submission -	<form action="form.html" method="post">
 * fieldset -	Labeled input grouping -	<fieldset> ... </fieldset>
 * input -	Multiple types of user input -	<input type="" />
