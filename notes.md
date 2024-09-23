@@ -40,6 +40,7 @@ man - Look up a command in the manual
 
 HTML ELEMENTS and MEANINGS:
 _html_	The page container
+
 _head_	Header information
 _title_	Title of the page
 _meta_	Metadata for the page such as character set or viewport settings
