@@ -39,36 +39,36 @@ You can also chain the input and output of commands using special characters
 man - Look up a command in the manual
 
 HTML ELEMENTS and MEANINGS:
-*_html_	The page container  
-*_head_	Header information  
-*_title_	Title of the page
-*_meta_	Metadata for the page such as character set or viewport settings
-*_script_	JavaScript reference. Either a external reference, or inline
-_include_	External content reference
-_body_	The entire content body of the page
-_header_	Header of the main content
-_footer_	Footer of the main content
-_nav_	Navigational inputs
-_main_	Main content of the page
-_section_	A section of the main content
-_aside_	Aside content from the main content
-_div_	A block division of content
-_span_	An inline span of content
-_h<1-9>_	Text heading. From h1, the highest level, down to h9, the lowest level
-_p_	A paragraph of text
-_b_	Bring attention
-_table_	Table
-_tr_	Table row
-_th_	Table header
-_td_	Table data
-_ol_,_ul_	Ordered or unordered list
-_li_	List item
-_a_	Anchor the text to a hyperlink
-_img_	Graphical image reference
-_dialog_	Interactive component such as a confirmation
-_form_	A collection of user input
-_input_	User input field
-_audio_	Audio content
-_video_	Video content
-_svg_	Scalable vector graphic content
-_iframe_	Inline frame of another HTML page
+* html	The page container  
+* head_	Header information  
+* title Title of the page
+* meta	Metadata for the page such as character set or viewport settings
+* script	JavaScript reference. Either a external reference, or inline
+* include	External content reference
+* body	The entire content body of the page
+* header	Header of the main content
+* footer	Footer of the main content
+* nav	Navigational inputs
+* main	Main content of the page
+* section	A section of the main content
+* aside	Aside content from the main content
+* div	A block division of content
+* span	An inline span of content
+* h<1-9>	Text heading. From h1, the highest level, down to h9, the lowest level
+* p	A paragraph of text
+* b	Bring attention
+* table	Table
+* tr	Table row
+* th	Table header
+* td	Table data
+* ol,ul	Ordered or unordered list
+* li	List item
+* a	Anchor the text to a hyperlink
+* img	Graphical image reference
+* dialog	Interactive component such as a confirmation
+* form	A collection of user input
+* input	User input field
+* audio	Audio content
+* video	Video content
+* svg	Scalable vector graphic content
+* iframe	Inline frame of another HTML page
