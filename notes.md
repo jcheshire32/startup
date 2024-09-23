@@ -73,7 +73,7 @@ HTML ELEMENTS and MEANINGS:
 * svg	Scalable vector graphic content
 * iframe	Inline frame of another HTML page
 
-SPECIAL CHARACTERS:
+SPECIAL CHARACTERS: (click edit to see it better)
 
 * & -	&amp;
 * < -	&lt;
@@ -128,3 +128,15 @@ STRUCTURE ELEMENTS:
     <div>Footer - <span>Span</span></div>
   </footer>
 </body>
+
+HTML input elements:
+* form -	Input container and submission -	<form action="form.html" method="post">
+* fieldset -	Labeled input grouping -	<fieldset> ... </fieldset>
+* input -	Multiple types of user input -	<input type="" />
+* select	- Selection dropdown	- <select><option>1</option></select>
+* optgroup	- Grouped selection dropdown -	<optgroup><option>1</option></optgroup>
+* option	- Selection option	- <option selected>option2</option>
+* textarea -	Multiline text input	- <textarea></textarea>
+* label -	Individual input label	- <label for="range">Range: </label>
+* output	- Output of input -	<output for="range">0</output>
+* meter	- Display value with a known range -	<meter min="0" max="100" value="50"></meter>
