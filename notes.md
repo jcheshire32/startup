@@ -39,8 +39,8 @@ You can also chain the input and output of commands using special characters
 man - Look up a command in the manual
 
 HTML ELEMENTS and MEANINGS:
-* html	The page container  
-* head_	Header information  
+* html -The page container  
+* head	- Header information  
 * title Title of the page
 * meta	Metadata for the page such as character set or viewport settings
 * script	JavaScript reference. Either a external reference, or inline
@@ -72,3 +72,12 @@ HTML ELEMENTS and MEANINGS:
 * video	Video content
 * svg	Scalable vector graphic content
 * iframe	Inline frame of another HTML page
+
+SPECIAL CHARACTERS:
+
+* & -	&amp;
+* < -	&lt;
+* > -	&gt;
+* " -	&quot;
+* ' -	&apos;
+* 😀 -	&#128512;
