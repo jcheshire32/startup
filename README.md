@@ -47,4 +47,11 @@ After selecting submit:
 **WebSocket** - As users make submissions, their submissions are broadcast to all other users.
 
 ## HTML Deliverable
-in the future i will call (this website) to do (this thing for me)
+The prerequisites are complete.
+* I used the proper tags BODY, NAV, MAIN, HEADER, FOOTER
+* I included links between pages like Simon
+* There is textual content
+* The "Browse" page is the place holder for most of the 3rd party calls I will need.
+* Images will also be in the browse page under "coming soon"
+* Login placeholder is on the main page, like Simon
+* Database and WebSocket placeholders are also on the browse page.
