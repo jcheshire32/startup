@@ -45,3 +45,6 @@ After selecting submit:
 **DB/Login** - Store users and submissions in database. Register and login users. Credentials securely stored in database. Can't submit or browse unless authenticated.
 
 **WebSocket** - As users make submissions, their submissions are broadcast to all other users.
+
+## HTML Deliverable
+in the future i will call (this website) to do (this thing for me)
