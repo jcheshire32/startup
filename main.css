@@ -35,6 +35,10 @@ button {
     padding: 20px;
 }
 
+#buttons {
+    flex-direction: row;
+}
+
 menu li {
     display: inline;
     margin-right: 20px;
