@@ -164,3 +164,5 @@ Most attributes have these:
 * disabled -	Disables the ability for the user to interact with the input
 * value -	The initial value of the input
 * required	- Signifies that a value is required in order to be valid
+
+Event listeners are things that wait for an action, like when you click a button or when you scroll, they only do stuff once that event happens.
