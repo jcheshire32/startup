@@ -55,3 +55,13 @@ The prerequisites are complete.
 * Images will also be in the browse page under "coming soon"
 * Login placeholder is on the main page, like Simon
 * Database and WebSocket placeholders are also on the browse page.
+
+## CSS Deliverable
+The prerequisites are complete.
+For this deliverable I styled my website to how I want it to look.
+* Header/Footer/Body
+* Navigation - I made the buttons look nicer and have the directory in the top right of every page.
+* Responsive to window sizing - Made it flexible to different window sizes.
+* Application elements - Made the colors and spacing comfortable, different shades of brown because it's about gluten. Added functionality for the user to submit an image.
+* Application text content - Arial and sans-serif fonts
+* Application images - The top left of every webpage has a logo I made. The browse page has place holders for the images the user will be submitting.
