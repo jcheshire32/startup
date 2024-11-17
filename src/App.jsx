@@ -8,10 +8,10 @@ import Home from './home/Home';
 import Submit from './submit/Submit';
 
 // Importing styles
-import '../about/about.css';
-import '../browse/browse.css';
-import '../home/main.css';
-import '../submit/submit.css';
+import '../src/about/about.css';
+import '../src/browse/browse.css';
+import '../src/home/main.css';
+import '../src/submit/submit.css';
 
 function App() {
 
