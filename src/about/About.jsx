@@ -1,5 +1,5 @@
 import React from 'react';
-import '../about.css'
+import './about.css'
 
 //plain slash works for home
 //check the picture works
