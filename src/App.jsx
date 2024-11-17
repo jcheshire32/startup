@@ -2,10 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 
 // Importing components
-import About from '../other_stuff/components/About';
-import Browse from '../other_stuff/components/Browse';
-import Home from '../other_stuff/components/Home';
-import Submit from '../other_stuff/components/Submit';
+import About from './about/About';
+import Browse from './browse/Browse';
+import Home from './home/Home';
+import Submit from './submit/Submit';
 
 // Importing styles
 import '../other_stuff/styles/about.css';
