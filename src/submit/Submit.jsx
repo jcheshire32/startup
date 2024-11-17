@@ -53,3 +53,5 @@ function Submit() {
         </div>
     );
 }
+
+export default Submit;
