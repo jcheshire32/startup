@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/browse.css'
+import '../browse.css'
 
 function Browse() {
     return (
