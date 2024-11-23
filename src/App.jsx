@@ -17,6 +17,14 @@ import '../src/submit/submit.css';
 
 export function App() {
 
+  const [authState, setAuthState] = React.useState(AuthState.Unknown);
+  const [userName, setUserName] = React.useState('');
+
+  const handleAuthChange = (userName, newAuthState) => {
+    setUserName(userName);
+    setAuthState(newAuthState);
+  };
+
   return (
     <Router>
       <div className="app">
@@ -25,9 +33,6 @@ export function App() {
           <ul>
             <li>
               <NavLink to="/" exact>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/login">Login</NavLink>
             </li>
             <li>
               <NavLink to="/about">About</NavLink>
@@ -43,8 +48,11 @@ export function App() {
 
         <main>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
+            <Route path="/" element={ <Home
+                  userName={userName}
+                  authState={authState}
+                  onAuthChange={handleAuthChange}
+                />}/>
             <Route path="/about" element={<About />} />
             <Route path="/browse" element={<Browse />} />
             <Route path="/submit" element={<Submit />} />

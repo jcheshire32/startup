@@ -1,13 +1,19 @@
 import React from 'react';
 import './main.css';
+import {Login} from '../login/login';
 
-export function Home() {
+export function Home({ userName, authState, onAuthChange }) {
   return (
     <div>
       <main>
         <h1>Welcome to Gluten-Free Finds</h1>
         <p>Your go-to platform for finding the best gluten-free products out there.</p>
         <p>Browse our list, or contribute by submitting your own discoveries!</p>
+        <Login
+          userName={userName}
+          authState={authState}
+          onAuthChange={onAuthChange}
+        />
       </main>
 
       <footer>
