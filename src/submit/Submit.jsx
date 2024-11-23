@@ -1,22 +1,9 @@
 import React from 'react'
 import './submit.css'
 
-function Submit() {
+export function Submit() {
     return (
         <div>
-            <header>
-        <img src="GFFlogo.png" alt="logo" width="100" height="100" />
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/submit">Submit a find</a></li>
-            <li><a href="/browse">Browse finds</a></li>
-            <li><a href="/about">About</a></li>
-          </ul>
-        </nav>
-        <hr />
-      </header>
-
       <main>
         <h2>Submit a Gluten-Free Find</h2>
         <form>
@@ -53,5 +40,3 @@ function Submit() {
         </div>
     );
 }
-
-export default Submit;

@@ -1,22 +1,9 @@
 import React from 'react'
 import './browse.css'
 
-function Browse() {
+export function Browse() {
     return (
-        <div>
-            <header>
-        <img src="GFFlogo.png" alt="logo" width="100" height="100" />
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/submit">Submit a find</a></li>
-            <li><a href="/browse">Browse finds</a></li>
-            <li><a href="/about">About</a></li>
-          </ul>
-        </nav>
-        <hr />
-      </header>
-
+      <div>
       <main>
         <h2>Browse Gluten-Free Finds</h2>
         <div className="finds-list">
@@ -38,5 +25,3 @@ function Browse() {
         </div>
     );
 }
-
-export default Browse;

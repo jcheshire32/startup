@@ -3,22 +3,9 @@ import './about.css'
 
 //plain slash works for home
 //check the picture works
-function About() {
+export function About() {
     return (
-        <div>
-            <header>
-        <img src="GFFlogo.png" alt="logo" width="100" height="100" />
-        <nav>
-          <ul>
-            <li><a href="/">Home</a></li> 
-            <li><a href="/submit">Submit a find</a></li>
-            <li><a href="/browse">Browse finds</a></li>
-            <li><a href="/about">About</a></li>
-          </ul>
-        </nav>
-        <hr />
-      </header>
-
+      <div>
       <main>
         <p>
           Gluten Free Finds was created with the goal of helping the gluten-free community
@@ -40,5 +27,3 @@ function About() {
         </div>
     );
 }
-
-export default About;
