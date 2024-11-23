@@ -15,13 +15,6 @@ export function Browse() {
           </div>
         </div>
       </main>
-
-      <footer>
-        <hr />
-        <span className="text-reset">Author: James Cheshire</span>
-        <br />
-        <a href="https://github.com/jcheshire32/startup.git">GitHub</a>
-      </footer>
-        </div>
+      </div>
     );
 }

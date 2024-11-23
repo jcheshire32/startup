@@ -15,13 +15,6 @@ export function Home({ userName, authState, onAuthChange }) {
           onAuthChange={onAuthChange}
         />
       </main>
-
-      <footer>
-        <hr />
-        <span className="text-reset">Author: James Cheshire</span>
-        <br />
-        <a href="https://github.com/jcheshire32/startup.git">GitHub</a>
-      </footer>
     </div>
   );
 }
