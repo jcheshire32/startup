@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, NavLink } from 'react-router-dom';
 
 // Importing components
+import Header from './Header';
 import About from './about/About';
 import Browse from './browse/Browse';
 import Home from './home/Home';
@@ -18,31 +19,15 @@ function App() {
   return (
     <Router>
       <div className="app">
-        {/* Navigation menu */}
-        <nav>
-          <ul>
-            <li>
-              <NavLink to="/" exact>Home</NavLink>
-            </li>
-            <li>
-              <NavLink to="/about">About</NavLink>
-            </li>
-            <li>
-              <NavLink to="/browse">Browse</NavLink>
-            </li>
-            <li>
-              <NavLink to="/submit">Submit</NavLink>
-            </li>
-          </ul>
-        </nav>
+        <Header />
 
         <main>
-          <Routes>
+          {/* <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/browse" element={<Browse />} />
             <Route path="/submit" element={<Submit />} />
-          </Routes>
+          </Routes> */}
         </main>
       </div>
     </Router>
