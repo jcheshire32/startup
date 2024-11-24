@@ -65,3 +65,17 @@ For this deliverable I styled my website to how I want it to look.
 * Application elements - Made the colors and spacing comfortable, different shades of brown because it's about gluten. Added functionality for the user to submit an image.
 * Application text content - Arial and sans-serif fonts
 * Application images - The top left of every webpage has a logo I made. The browse page has place holders for the images the user will be submitting.
+
+## React Deliverable
+The prerequisites are complete.
+For this deliverable I used JavaScript and React so that the application works for a single user. I also added placeholders for future technology.
+
+
+ Bundled and transpiled - done
+ Components - Login, submit, and browse. With mocks for login, WebSocket.
+ login - You are prompted to login or create an account on the home page. Displays authenticated or unauthenticated components.
+ database - Displays user submissions. Done locally no but will use database later.
+ message dialog - similar to simon-react, for login stuff, shows messages
+ application logic - The submitted finds will be displayed for users to browse.
+ Router - Routing between login and submitting components.
+ Hooks - I have useState for authentication and I get people's userName from local storage.
