@@ -71,11 +71,11 @@ The prerequisites are complete.
 For this deliverable I used JavaScript and React so that the application works for a single user. I also added placeholders for future technology.
 
 
- Bundled and transpiled - done
- Components - Login, submit, and browse. With mocks for login, WebSocket.
- login - You are prompted to login or create an account on the home page. Displays authenticated or unauthenticated components.
- database - Displays user submissions. Done locally no but will use database later.
- message dialog - similar to simon-react, for login stuff, shows messages
- application logic - The submitted finds will be displayed for users to browse.
- Router - Routing between login and submitting components.
- Hooks - I have useState for authentication and I get people's userName from local storage.
+ * Bundled and transpiled - done
+ * Components - Login, submit, and browse. With mocks for login, WebSocket.
+ * login - You are prompted to login or create an account on the home page. Displays authenticated or unauthenticated components.
+ * database - Displays user submissions. Done locally no but will use database later.
+ * message dialog - similar to simon-react, for login stuff, shows messages
+ * application logic - The submitted finds will be displayed for users to browse.
+ * Router - Routing between login and submitting components.
+ * Hooks - I have useState for authentication and I get people's userName from local storage.
