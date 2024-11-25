@@ -1,7 +1,16 @@
 import React from 'react'
 import './submit.css'
 
-export function Submit() {
+export function Submit() { //should I include like an authtoken?
+  //starting empty
+    const [productName, setProductName] = useState('');
+    const [brand, setBrand] = useState('');
+    const [description, setDescription] = useState('');
+    const [location, setLocation] = useState('');
+
+    //ask ta about how to go about a submission function
+        
+
     return (
         <div>
       <main>
