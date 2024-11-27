@@ -5,7 +5,7 @@ import { Browse } from './browse/Browse';
 import { Submit } from './submit/Submit';
 import { About } from './about/About';
 import { AuthState } from './login/authState';
-import './app.css';
+import './App.css';
 import logo from '../GFFlogo.png';
 
 function App() {

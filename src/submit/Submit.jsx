@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
-import { MessageDialog } from './messageDialog';
+import { MessageDialog } from '../login/messageDialog';
 import './submit.css'
-
-export function Submit(token) { //does it need curly braces?
+//I THINK THE ISSUE IN IN THIS FUNCTION????
+export function Submit({ token }) {
   //starting empty
     const [productName, setProductName] = useState('');
     const [brand, setBrand] = useState('');
@@ -12,7 +12,7 @@ export function Submit(token) { //does it need curly braces?
     const [displayMessage, setDisplayMessage] = useState(null);
 
     async function submitFind() {
-      if (token == null){
+      if (!token){
         setDisplayMessage("Login or create an account to submit!");
         return;
       }
@@ -36,7 +36,7 @@ export function Submit(token) { //does it need curly braces?
         setLocation('');
       } else {
         const body = await response.json();
-        setDisplayError(`⚠ Error: ${body.msg}`);
+        setDisplayMessage(`⚠ Error: ${body.msg}`);
       }
     }
     //CHECK IF onChange IS WORKING LIKE SIMON

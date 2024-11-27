@@ -1,27 +1,25 @@
 import React, { useEffect, useState } from 'react';
 import './browse.css'
 
-export function Browse(token) { //check if syntax is right
+export function Browse({token}) { //check if syntax is right
   const [finds, setFinds] = useState([]);
   const [errorMessage, setErrorMessage] = useState(null);
 
-  useEffect (() => {
+  useEffect(() => {
     async function browseFinds() {
       if (!token) {
         setErrorMessage('Login or create an account to browse!');
         return;
       }
-      const response = await fetch(`/api/browse?token=${token}`); //same as before with checking for issues
-
+      const response = await fetch(`/api/browse?token=${token}`);
       if (response?.status === 200) {
         const data = await response.json();
         setFinds(data);
-      } else { //figure out error cases in another section of the project?
+      } else {
         setErrorMessage('Oops, unable to find any finds....');
       }
-
     }
-    browseFinds();//actually call that function now
+    browseFinds();//actually call it now
   }, token); //check syntax on authtoken stuff
 
   return ( //Am I making this harder than it needs to be?

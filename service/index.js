@@ -53,19 +53,22 @@ apiRouter.delete('/auth/logout', (req, res) => {
 //submit - check with ta on status codes
 apiRouter.post('/submit', (req, res) => {
     const user = Object.values(users).find((u) => u.token === req.body.token);
-    //maybe a check if logged in?
+
+    if (!user) {
+        res.status(401).send({ msg: 'Unauthorized: You must log in to submit.' });
+        return;
+    }
 
     const newFind = {
-        //maybe add an item id? So people can search for one? Too much?
         user: user.email,
         title: req.body.title,
         description: req.body.description,
     };
 
     finds.push(newFind);
-    //204 like simon? or 200? or 201?
-    res.status(204).send({ msg: 'Find submitted successfully', find: newFind });
+    res.status(201).send({ msg: 'Find submitted successfully', find: newFind });
 });
+
 
 //browse
 apiRouter.get('/browse', (req, res) => {
