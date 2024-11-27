@@ -27,7 +27,7 @@ apiRouter.post('/auth/create', async (req, res) => {
     }
     });
   
-// GetAuth login an existing user
+//login - get auth
 apiRouter.post('/auth/login', async (req, res) => {
     const user = users[req.body.email];
     if (user) {
@@ -40,7 +40,7 @@ apiRouter.post('/auth/login', async (req, res) => {
     res.status(401).send({ msg: 'Unauthorized' });
     });
   
-// DeleteAuth logout a user
+//logout - delete auth
 apiRouter.delete('/auth/logout', (req, res) => {
     const user = Object.values(users).find((u) => u.token === req.body.token);
     if (user) {
@@ -72,7 +72,7 @@ apiRouter.get('/browse', (req, res) => {
     res.send(finds);
 });
 
-// Return the application's default page if the path is unknown
+//default page
 app.use((_req, res) => {
     res.sendFile('index.html', { root: 'public' });
   });

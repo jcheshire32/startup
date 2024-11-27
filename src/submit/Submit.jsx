@@ -1,51 +1,90 @@
 import React from 'react'
+import Button from 'react-bootstrap/Button';
+import { MessageDialog } from './messageDialog';
 import './submit.css'
 
-export function Submit() { //should I include like an authtoken?
+export function Submit(token) { //does it need curly braces?
   //starting empty
     const [productName, setProductName] = useState('');
     const [brand, setBrand] = useState('');
     const [description, setDescription] = useState('');
     const [location, setLocation] = useState('');
+    const [displayMessage, setDisplayMessage] = useState(null);
 
-    //ask ta about how to go about a submission function
-        
-
+    async function submitFind() {
+      if (token == null){
+        setDisplayMessage("Login or create an account to submit!");
+        return;
+      }
+      
+      const response = await fetch('/api/submit', {
+        method: 'POST',
+        body: JSON.stringify({
+          token,
+          title: productName,
+          description: brand + " - " + description + ". Available at: " + location, //try different styles
+        }),
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8',
+        },
+      });
+      if (response?.status === 200) {
+        setDisplayMessage('Find submitted successfully! Thank you!');
+        setProductName('');
+        setBrand('');
+        setDescription('');
+        setLocation('');
+      } else {
+        const body = await response.json();
+        setDisplayError(`⚠ Error: ${body.msg}`);
+      }
+    }
+    //CHECK IF onChange IS WORKING LIKE SIMON
     return (
-        <div>
-      <main>
+      <div className="container">
         <h2>Submit a Gluten-Free Find</h2>
-        <form>
-          <div className="form-group">
-            <label htmlFor="productName">Product Name:</label>
-            <input type="text" id="productName" name="productName" required />
-          </div>
-          
-          <div className="form-group">
-            <label htmlFor="brand">Brand:</label>
-            <input type="text" id="brand" name="brand" required />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="description">Description:</label>
-            <textarea id="description" name="description" required></textarea>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="location">Where to Buy:</label>
-            <input type="text" id="location" name="location" />
-          </div>
-
-          <button type="submit">Submit</button>
-        </form>
-      </main>
-
-      <footer>
-        <hr />
-        <span className="text-reset">Author: James Cheshire</span>
-        <br />
-        <a href="https://github.com/jcheshire32/startup.git">GitHub</a>
-      </footer>
+        <div className="input-group mb-3">
+          <span className="input-group-text">Product Name:</span>
+          <input
+            className="form-control"
+            type="text"
+            value={productName}
+            onChange={(e) => setProductName(e.target.value)}
+            placeholder="Product Name"
+            required/>
         </div>
+        <div className="input-group mb-3">
+          <span className="input-group-text">Brand:</span>
+          <input
+            className="form-control"
+            type="text"
+            value={brand}
+            onChange={(e) => setBrand(e.target.value)}
+            placeholder="Brand"
+            required/>
+        </div>
+        <div className="input-group mb-3">
+          <span className="input-group-text">Description:</span>
+          <textarea
+            className="form-control"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            placeholder="Description"
+            required></textarea>
+        </div>
+        <div className="input-group mb-3">
+          <span className="input-group-text">Location name:</span>
+          <input
+            className="form-control"
+            type="text"
+            value={location}
+            onChange={(e) => setLocation(e.target.value)}
+            placeholder="Where to Buy"/>
+        </div>
+        <Button variant="primary" onClick={submitFind} disabled={!productName || !brand || !description}>
+          Submit
+        </Button>
+      </div>
     );
+    //textarea instead of input for the description cause it can be long
 }
